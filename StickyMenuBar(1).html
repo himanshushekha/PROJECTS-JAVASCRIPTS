@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickyMenuBar</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header
+        {
+          text-align: center;
+        }
+        #menubar
+        {
+            text-align: center;
+            background-color:darkgoldenrod;
+        }
+        #menubar li
+        {
+            display:inline-block;
+            padding: 15px 10px;
+            font-size:18px;
+            font-weight: bold;
+            color:seagreen;
+        }
+        #container
+        {
+            text-align: center;
+            padding: 50px 100px;
+        }
+        .sticky
+        {
+            position:fixed;
+            top:0;
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+     
+        <img src="https://wallpapercave.com/wp/wp3991171.jpg" height="300px"  width="600px"/>
+        
+    </div>
+
+    <nav id="menubar">
+<ul>
+    <li>HOME</li>
+    <li>ABOUT US</li>
+    <li>OUR TEAM</li>
+    <li>CLIENT</li>
+    <li>CONTACT US</li>
+</ul>
+    </nav>
+    <div id="container">
+        <h1>ABOUT KOLKATA KNIGH RIDERS </h1>
+<img src="https://www.cricket.com.au/~/-/media/News/2014/06/2kkr_celebrate.ashx?w=1600"  alt="_ " height="200px" width="100%"/>
+<p>
+    Kolkata Knight Riders (KKR) are a professional franchise cricket team representing the city of Kolkata in the Indian Premier League. The franchise is owned by Bollywood actor Shah Rukh Khan, actress Juhi Chawla and her spouse Jay Mehta. The Knight Riders play at the Eden Gardens stadium.[2]
+
+    The franchise, which has gained immense popularity due to its association with celebrity owners, qualified for the IPL playoffs for the first time in 2011. They became the IPL champions in 2012, by defeating Chennai Super Kings in the final. They repeated the feat in 2014, defeating Kings XI Punjab.[3] The Knight Riders hold the record for the longest winning streak by any Indian team in T20s (14).[4]
+    
+    The side's all-time leading run-scorer is Gautam Gambhir,[5] while their leading wicket-taker is Sunil Narine.[6] The official theme of the team is Korbo, Lorbo, Jeetbo Re (we will perform, fight, and win!) and the official colours are purple and gold.
+    
+    Franchise history
+    
+    Sourav Ganguly with the symbol of the Kolkata Knight Riders, flanked by Shah Rukh Khan on the left and Gauri Khan on the right.
+    In 2007, the Board of Control for Cricket in India (BCCI) created the cricket tournament Indian Premier League, based on the Twenty20 format of the game.[7] Eight teams participated in the inaugural tournament held in April – June 2008. The teams representing the eight different cities of India were put up on auction in Mumbai on 20 February 2008. The team representing Kolkata was eventually bought by Bollywood superstar Shah Rukh Khan's company Red Chillies Entertainment in partnership with actress Juhi Chawla and her husband Jay Mehta for a price of $75.09 million, equal to approximately ₹2.98 billion at that time.[8] Sourav Ganguly, former captain of the Indian national team, a native of West Bengal and the current President of BCCI, was named the Icon player for the team. The name of the team is a reference to the popular 1980s American television series Knight Rider.[9]
+    
+    In June 2015, the team's ownership group bought a stake in the Caribbean Premier League's Trinidad and Tobago Red Steel,[10] and renamed it the Trinbago Knight Riders in 2016.[11] In December 2020, the team also made an investment in the upcoming American T20 league Major League Cricket.[12]
+    
+    In 2021, the Knight Riders Group CEO, Venky Mysore, announced their entry into the South African T20 league with Cape Town Knight Riders and signalled intentions to invest in ECB's new competition format, The Hundred.[13]
+    
+    Valuation
+    According to Forbes in 2022, Kolkata Knight Riders are the 3rd most valuable team in the IPL behind MI and CSK with a valuation of $1.1 billion.[14]
+    
+    Livery
+    Initially, when the Kolkata Knight Riders were first introduced in 2008, the logo of the team consisted of a blazing golden Viking helmet against a black background with the name of the team written in gold next to it. However, the black background was changed to purple in the third season. It was in 2012 that the current logo, which has a blazing purple Corinthian helmet trimmed with gold, with Kolkata Knight Riders written within a shield was introduced.[15]
+    
+    The tagline of the team was "All the King's Men" during the first four seasons.[16] However, in the fifth it was replaced by "New Dawn, New Knights". The team's official colours were black and gold during the first two seasons. At the time, Khan said that "golden symbolizes spirit of life and black presents the Goddess Kali."[16] It was later changed to purple and gold during the third season and was kept so. The jersey was created by Bollywood fashion designer Manish Malhotra.[16]
+    
+    The main theme of the team Korbo, Lorbo, Jeetbo Re (we will act, fight, and win!) was scored by Vishal–Shekhar duo.[16] A Knight Riders album featuring several singers and music composers including Usha Uthup and Bappi Lahiri was also created.[17][18]
+    
+    
+    Team logo of the Kolkata Knight Riders, 2008–2011 seasons.
+    Rivalries
+    The Knight Riders have historically been a successful franchise in the IPL. This success has led to them having many rivalries among other teams.
+</p>
+    </div>
+    <script>
+window.addEventListener('scroll',function()
+{
+    let navbar = document.getElementById("menubar");
+    if(window.pageYOffset >= 190)
+    {
+navbar.classList.add('sticky');
+    }
+    else
+    {
+        navbar.classList.remove('sticky');
+    }
+})
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
