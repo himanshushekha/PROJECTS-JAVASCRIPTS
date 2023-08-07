@@ -1,0 +1,49 @@
+#name
+{
+    
+    background-color:burlywood;
+    color:black;
+    
+}
+#phone
+{
+   
+    background-color:burlywood;
+    color:black;
+}
+body{
+    background-color:darkslategrey;
+}
+h1
+ {
+    text-align: center;
+    color:chocolate;
+}
+div{
+    text-align: center;
+}
+.center
+{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 3px solid black;
+      }
+button{
+    width:200px;
+    height:20px;
+    background-color:indianred;
+}
+input{
+    width:400px;
+    height:30px;
+}
+table,th,td{
+    border:1px solid black;
+    width:1000px;
+}
+
+    
+
