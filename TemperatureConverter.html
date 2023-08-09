@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Temperature.css"/>
+    
+</head>
+<body>
+   <h1>TEMPERATURE CONVERTER</h1>
+   <div id="container">
+    <div class="input">
+        <label>CELSIUS:</label><br>
+       <input type="number" value="0" id="cl" class="inp"/>
+    </div>
+    <div class="input">
+        <label>FAHRENHEIT:</label><br>
+        <input type="number" value="32" id='fh' class="inp"/>
+    </div>
+   </div>
+   <script>
+    let cl = document.getElementById("cl");
+    let fh = document.getElementById("fh");
+
+cl.addEventListener('input',function()
+    {
+       let c=this.value;
+       let f = (c * 9/5) + 32;
+       if(!Number.isInteger(f)){
+      f=f.toFixed(4);
+       }
+       fh.value=f;
+    }
+);
+
+fh.addEventListener('input',function()
+    {
+      let f =this.value;
+      let c = (f - 32 ) * 5/9 ;
+      if(!Number.isInteger(c)){
+      c=c.toFixed(4);
+       }
+      cl.value=c;
+    }
+)
+   </script>
+</body>
+</html>
